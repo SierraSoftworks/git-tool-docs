@@ -49,7 +49,12 @@ export default defineComponent({
     const error = ref(null);
 
     fetch(
-      "https://api.github.com/repos/SierraSoftworks/git-tool/git/trees/main?recursive=true"
+      "https://api.github.com/repos/SierraSoftworks/git-tool/git/trees/main?recursive=true",
+      {
+        headers: {
+          "Accept": "application/vnd.github.v3+json"
+        }
+      }
     )
       .then((res) => res.json())
       .then((res: GitHubTree) =>
