@@ -20,8 +20,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
-  // TODO: Switch to Vite bundler once CF Pages builds quickly enough
-  // bundler: "@vuepress/bundler-vite",
+  bundler: "@vuepress/bundler-vite",
 
   extendsPageData(page, app) {
     const fixedHeaders = page.headers || []
@@ -122,6 +121,10 @@ export default defineUserConfig<DefaultThemeOptions>({
       ]
     }
   },
+
+  plugins: [
+    ["@vuepress/plugin-google-analytics", { id: "G-WJQ1PVYVH0" }]
+  ]
 
 
 })
