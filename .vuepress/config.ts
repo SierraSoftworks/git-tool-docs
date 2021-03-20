@@ -13,7 +13,7 @@ function fixPageHeader(header: PageHeader) {
 export default defineUserConfig<DefaultThemeOptions>({
   lang: 'en-GB',
   title: 'Git-Tool',
-  description: 'Documentation for Git-Tool',
+  description: 'Keep your repos organized without having to try.',
 
   head: [
     ['meta', { name: "description", content: "Documentation for Git-Tool, a powerful command-line helper which keeps your Git repositories organized automatically." }],
