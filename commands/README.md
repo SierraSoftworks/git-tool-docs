@@ -4,6 +4,11 @@ to think about where a given repository should be stored. The goal was to let yo
 working on a project without breaking your mental context around why you wanted to work on it
 in the first place.
 
+::: tip
+For a quick introduction to using Git-Tool's core commands, take a look at the
+[Usage Guide](../guide/usage.md).
+:::
+
 Over the years, Git-Tool has expanded in scope, but its core goal remains the same: organize
 your development work automatically so you don't need to think about it and can focus on the
 important stuff.
