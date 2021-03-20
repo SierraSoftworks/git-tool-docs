@@ -4,6 +4,7 @@
   "description": "The documentation website for Git-Tool, generated with VuePress",
   "main": "index.js",
   "scripts": {
+    "build": "vuepress build .",
     "docs:dev": "vuepress dev .",
     "docs:build": "vuepress build ."
   },

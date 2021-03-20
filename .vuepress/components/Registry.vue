@@ -24,7 +24,6 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import FileTree from "./FileTree.vue";
-import { load } from "js-yaml";
 
 interface GitHubTree {
   tree: GitHubTreeNode[];
