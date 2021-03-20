@@ -20,7 +20,8 @@ export default defineUserConfig<DefaultThemeOptions>({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
-  bundler: "@vuepress/bundler-vite",
+  // TODO: Switch to Vite bundler once CF Pages builds quickly enough
+  // bundler: "@vuepress/bundler-vite",
 
   extendsPageData(page, app) {
     const fixedHeaders = page.headers || []
