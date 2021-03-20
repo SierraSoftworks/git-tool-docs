@@ -3,7 +3,7 @@ home: true
 
 actions:
     - text: Get Started
-      link: /guide/README.md
+      link: /guide/
     - text: Download
       link: https://github.com/SierraSoftworks/git-tool/releases
       type: secondary
