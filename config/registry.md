@@ -74,6 +74,7 @@ includes both apps and services to show how to use them, not because it's a good
 :::
 
 ```yaml
+# yaml-language-server: $schema=https://schemas.sierrasoftworks.com/git-tool/v1/template.schema.json
 name: Demo
 description: This is an example of how to create a config template
 version: 1.0.0
@@ -105,6 +106,16 @@ Registry templates are `yaml` files (with the `.yaml` extension) which Git-Tool 
 update your local config. They have a bit of metadata to explain to humans what they do, but
 the most important part is the list of `configs` which tell Git-Tool how to modify your
 local [config](README.md) file.
+
+::: tip
+We publish a [JSONSchema](https://json-schema.org) schema for Git-Tool templates which your
+editor can use to give you autocomplete and automatic validation. To include it, just add the
+following to the top of your template.
+
+```yaml
+# yaml-language-server: $schema=https://schemas.sierrasoftworks.com/git-tool/v1/template.schema.json
+```
+:::
 
 #### `name` <Badge type="danger" text="required"/>
 This is the human readable name you wish to give to this template. It doesn't need to match

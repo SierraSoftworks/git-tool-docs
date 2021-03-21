@@ -79,6 +79,8 @@ To view your current configuration, run `gt config`.
 
 ```yaml
 ---
+# yaml-language-server: $schema=https://schemas.sierrasoftworks.com/git-tool/v1/config.schema.json
+$schema: https://schemas.sierrasoftworks.com/git-tool/v1/config.schema.json
 directory: /home/bpannell/dev
 services:
   - domain: github.com
