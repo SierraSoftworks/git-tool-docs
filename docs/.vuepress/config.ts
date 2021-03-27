@@ -1,5 +1,4 @@
-import { defineUserConfig, PageHeader } from 'vuepress-vite'
-import { DefaultThemeOptions } from '@vuepress/theme-default'
+import { defineUserConfig, PageHeader, DefaultThemeOptions } from 'vuepress-vite'
 
 function htmlDecode(input: string): string {
   return input.replace("&#39;", "'").replace("&amp;", "&").replace("&quot;", '"')
